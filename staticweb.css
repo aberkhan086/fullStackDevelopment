@@ -1,0 +1,30 @@
+.heading{
+    text-align:center;
+}
+.items{
+   padding:10px; 
+   padding-left:20px;
+   grid:black;
+   background-color: rgba(167, 230, 167, 0.294);
+
+}
+.item{
+    padding:10px;
+}
+body{
+    background-color:rgb(120,140,140);
+}
+.mainpage{
+    flex-wrap: wrap;
+    display:flex;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.tshirts{
+    width:200px;
+    height:200px;
+    text-align:right;
+    
+}
