@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc" style="width:100px; height:100px;background-color: blue;">
+    </div><br>
+    <div id="ab" style="width:100px; height:100px;background-color: red;">
+    </div>
+    <button id="clickme">Click Me!</button>
+    <script>
+        //alert example
+        document.getElementById("clickme").addEventListener("dblclick",function(){
+            alert("Button is clicked");
+        })
+       //background color changing
+       /*let a=document.getElementById("abc");
+       a.addEventListener("mouseenter",function(){
+        a.style.backgroundColor="red";     
+        a.textContent="heloo";
+        
+       });
+       a.addEventListener("mouseout",function(){
+        a.style.backgroundColor="aquamarine";
+        a.textContent="";
+       });
+       //changing
+        let az=document.getElementById("ab");
+        az.addEventListener("mouseenter",function(){
+        az.style.backgroundColor="red";
+        az.textContent="heloo";  
+       });
+       az.addEventListener("mouseout",function(){
+        az.style.backgroundColor="aquamarine";
+        az.textContent="";
+       });*/
+       //two boxes
+        let a=document.getElementById("abc");
+        let az=document.getElementById("ab");
+        a.addEventListener("mouseenter",function(){
+        a.style.backgroundColor="red";
+        az.style.backgroundColor="blue";
+        a.textContent="heloo";
+        az.textContent="helooo";
+        
+       });
+       a.addEventListener("mouseout",function(){
+        a.style.backgroundColor="blue";
+        az.style.backgroundColor="red";
+        a.textContent="";
+        az.textContent="";
+       });
+       az.addEventListener("mouseenter",function(){
+        az.style.backgroundColor="red";
+        a.style.backgroundColor="blue";
+        az.textContent="heloo";
+        a.textContent="helooo";
+        
+       });
+       az.addEventListener("mouseout",function(){
+        az.style.backgroundColor="blue";
+        a.style.backgroundColor="red";
+        az.textContent="";
+        a.textContent="";
+       });
+       //changing
+       /* az.addEventListener("mouseenter",function(){
+        az.style.backgroundColor="red";
+        az.textContent="heloo";  
+       });
+       az.addEventListener("mouseout",function(){
+        az.style.backgroundColor="aquamarine";
+        az.textContent="";
+       });*/
+       
+
+    </script>
+</body>
+</html>
