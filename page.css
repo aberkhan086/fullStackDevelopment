@@ -1,0 +1,134 @@
+body{
+  margin: auto;
+  background-color: aliceblue;
+}
+.header{
+  background-color: blue;
+  color: aliceblue;
+  display:flex;
+  padding:10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  color:white;
+  font-weight: 900px;
+  font-size:30px;
+  cursor: pointer;
+}
+.nav-categories a{
+  text-align: center;
+  font-weight: 400px;
+  font-size: 20px;
+  padding:5px 0;
+  color: aliceblue;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.nav-categories a:hover{
+  border-bottom: 3px solid white;
+
+}
+.nav-right{
+  display: flex;
+  font-weight: 400px;
+  font-size: 20px;
+  margin-left: 30px;
+  gap:20px;
+  cursor: pointer;
+}
+.nav-right div:hover{
+  border-bottom: 3px solid white;
+}
+fieldset{
+  background-color: antiquewhite;
+}
+.heading2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900px;
+  color: #0077cc;
+}
+.allimages{
+  display: flex;
+  width: auto;
+  height: auto;
+  animation: scroll-left 15s linear infinite;
+}
+.slide img{
+  height: 300px;
+  width: 300px;
+  margin-right:20px ;
+  border-radius: 10px;
+}
+.slide{
+  flex-wrap: row;
+  flex-direction: row;
+  flex-shrink: 0 ;
+}
+@keyframes scroll-left{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+     
+.container {
+  display: flex;              /* flex container for products */
+  flex-wrap: wrap;            /* wrap to next line */
+  gap: 20px;                  /* spacing between products */
+  padding: 20px;
+  margin: 30px;
+}
+
+.product {
+  background-color: white;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform-origin: center center;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+}
+
+.product figure {
+  margin: 0;
+  padding: 10px;
+}
+
+.product img.image {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.product figcaption {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.product figcaption a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.product figcaption a:hover {
+  text-decoration: underline;
+}
+.flat{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color:#0077cc;
+}
